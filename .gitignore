@@ -7,23 +7,23 @@ __pycache__/
 *.so
 
 # Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
+*.Python
+*build/
+*develop-eggs/
+*dist/
+*downloads/
+*eggs/
+*.eggs/
+*lib/
+*lib64/
+*parts/
+*sdist/
+*var/
+*wheels/
 *.egg-info/
-.installed.cfg
+*.installed.cfg
 *.egg
-MANIFEST
+*MANIFEST
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -32,20 +32,20 @@ MANIFEST
 *.spec
 
 # Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
+*pip-log.txt
+*pip-delete-this-directory.txt
 
 # Unit test / coverage reports
-htmlcov/
-.tox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
+*htmlcov/
+*.tox/
+*.coverage
+*.coverage.*
+*.cache
+*nosetests.xml
+*coverage.xml
 *.cover
-.hypothesis/
-.pytest_cache/
+*.hypothesis/
+*.pytest_cache/
 
 # Translations
 *.mo
@@ -53,52 +53,55 @@ coverage.xml
 
 # Django stuff:
 *.log
-local_settings.py
-db.sqlite3
+*local_settings.py
+*db.sqlite3
 
 # Flask stuff:
-instance/
-.webassets-cache
+*instance/
+*.webassets-cache
 
 # Scrapy stuff:
-.scrapy
+*.scrapy
 
 # Sphinx documentation
-docs/_build/
+*docs/_build/
 
 # PyBuilder
-target/
+*target/
 
 # Jupyter Notebook
-.ipynb_checkpoints
+*.ipynb_checkpoints
 
 # pyenv
-.python-version
+*.python-version
 
 # celery beat schedule file
-celerybeat-schedule
+*celerybeat-schedule
 
 # SageMath parsed files
 *.sage.py
 
 # Environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
+*.env
+*.venv
+*env/
+*venv/
+*ENV/
+*env.bak/
+*venv.bak/
 
 # Spyder project settings
-.spyderproject
-.spyproject
+*.spyderproject
+*.spyproject
 
 # Rope project settings
-.ropeproject
+*.ropeproject
 
 # mkdocs documentation
-/site
+*/site
 
 # mypy
-.mypy_cache/
+*.mypy_cache/
+
+# PyCharm
+*.idea
