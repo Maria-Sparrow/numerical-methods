@@ -14,3 +14,7 @@ Solving nonlinear algebraic equations using bisection, iterative and Steffensen'
 
 Solving system of nonlinear algebraic equations using secants method 
 (with inversion of jacobian using Gauss method with column sort)
+
+### Lab4
+
+Approximate computing of definite integral using Simpson's Rule
