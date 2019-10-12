@@ -33,6 +33,18 @@ def main():
             p_array = [elementary_matrix[i][b] for i in range(roots_number)]
             y_array = copy.deepcopy(p_array)
             for k in range(roots_number):
+                # column sort begin
+                max_value = abs(v_array[k][k])
+                w = k
+                for l in range(k + 1, roots_number):
+                    if max_value < abs(v_array[l][k]):
+                        max_value = abs(v_array[l][k])
+                        w = l
+                for d in range(roots_number):
+                    value = v_array[k][d]
+                    v_array[k][d] = v_array[w][d]
+                    v_array[w][d] = value
+                # column sort end
                 y_array[k] = p_array[k] / v_array[k][k]
                 for i in range(k + 1, roots_number):
                     p_array[i] -= v_array[i][k] * y_array[k]
