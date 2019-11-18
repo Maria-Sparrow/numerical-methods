@@ -23,3 +23,8 @@ Approximate computing of definite integral using Simpson's Rule
 
 Solving system of differential equations for transient process of RLC circuit 
 using modified-Euler method
+
+### Complex Lab
+
+Solving system of differential equations for transient process of RLC circuit 
+using Runge-Kutta method and approximation of inductance with cubic spline
