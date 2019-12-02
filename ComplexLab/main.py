@@ -34,7 +34,7 @@ def input_voltage(time_point):
 
 
 def output_voltage(value):
-    return value[2] / R4
+    return value[2] * R4
 
 
 def inductance(current_value):
@@ -49,10 +49,10 @@ def inductance(current_value):
 
 
 differential_equations = \
-    [lambda time_point, value: ((value[2] + input_voltage(time_point) * R3 - value[0] * (R1 + R3)) / C1),
+    [lambda time_point, value: ((value[2] + input_voltage(time_point) / R3 - value[0] * (1 / R1 + 1 / R3)) / C1),
      lambda time_point, value: (value[2] / C2),
      lambda time_point, value:
-     ((input_voltage(time_point) - value[0] - value[1] - value[2] * (1 / R2 + 1 / R4)) / inductance(value[2]))]
+     ((input_voltage(time_point) - value[0] - value[1] - value[2] * (R2 + R4)) / inductance(value[2]))]
 
 
 def get_next_value(time_point, value, step):
@@ -131,3 +131,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
